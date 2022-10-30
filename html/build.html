@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/build.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>My Build</title>
+</head>
+
+<body>
+        <!-- navbar -->
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="brand">
+                <a href="../index.html">
+                    <h1>Chrino'S</h1>
+                </a>
+            </div>
+            <ul class="menu-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://www.hoyolab.com/home/events" target="_blank">Event</a></li>
+                <li><a href="html/myprofile.html" target="_blank">About Me</a></li>
+                <li><a href="../index.html #gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- content -->
+        <div class="container-build">
+            <div class="judul-content-build">
+                <h1>My Collection Build</h1>
+            </div>
+
+        <!-- card build -->
+        <ul class="gallery">
+            <li>
+                <a href="#gambar-1">
+                    <img src="../img/thumb/ayakathumb.png" alt="ayaka">
+                <span>Ayaka</span>
+    
+                </a>
+                
+                <div class="overlay" id="gambar-1">
+                    <a href="#" class="close"> X close </a>
+    
+                    <a href="#gambar-4" class="prev">prev</a>
+    
+                    <img src="../img/full/ayaka.png" alt="ayaka">
+    
+                    <a href="#gambar-2" class="next">next</a>
+    
+                </div>
+            </li>
+    
+            <li>
+                <a href="#gambar-2"><img src="../img/thumb/Eula.png" alt="eula">
+                <span>Eula</span></a>
+    
+                    <div class="overlay" id="gambar-2">
+                    <a href="#" class="close"> X close </a>
+                    <a href="#gambar-1" class="prev">prev</a>
+                    <img src="../img/full/eula.png" alt="eula">
+                    <a href="#gambar-3" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-3"><img src="../img/thumb/hutao-thumb.png" alt="hutao">
+                <span>Hu Tao</span></a>
+                    <div class="overlay" id="gambar-3">
+                    <a href="#" class="close"> X close </a>
+                    <a href="#gambar-2" class="prev">prev</a>
+                    <img src="../img/full/hutao.png" alt="ganyu">
+                    <a href="#gambar-4" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-4"><img src="../img/thumb/raiden-card.png" alt="raiden">
+                <span>Raiden</span></a>
+                    <div class="overlay" id="gambar-4">
+                    <a href="#" class="close"> X close </a>
+                    <a href="#gambar-3" class="prev">prev</a>
+                    <img src="../img/full/shogun.png" alt="raiden">
+                    <a href="#gambar-5" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-5"><img src="../img/thumb/yae-thumb.png" alt="yae">
+                <span>Yae</span></a>
+                    <div class="overlay" id="gambar-5">
+                    <a href="#" class="close"> X close </a>
+                    <a href="#gambar-4" class="prev">prev</a>
+                    <img src="../img/full/yae.png" alt="raiden">
+                    <a href="#gambar-6" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#gambar-6"><img src="../img/thumb/ganyuthumb.png" alt="ganyu">
+                <span>Ganyu</span></a>
+                    <div class="overlay" id="gambar-6">
+                    <a href="#" class="close"> X close </a>
+                    <a href="#gambar-5" class="prev">prev</a>
+                    <img src="../img/full/ganyu.png" alt="raiden">
+                    <a href="#gambar-1" class="next">next</a>
+                </div>
+            </li>
+            
+    <div class="clear"></div>
+        </ul>
+    </div>
+
+    <footer>
+        <p class="text">Kunjungi Website TI Unisla</p>
+        <a href="https://ti.unisla.ac.id/" target="_blank" class="unisla">UNISLA</a>
+        </ul> 
+        <div class="social-media">
+            <a href="https://www.instagram.com/christpr31" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/gambreng.gambreng.33449" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UC0AaItUbMePMJLhEU_LlMOA" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copyrights"> Copyright © 2022 Christopher</p>
+    </footer>
+    <script type="text/javascript">
+		const menuToggle = document.querySelector('.menu-toggle input');
+		const nav = document.querySelector('nav ul');
+
+		menuToggle.addEventListener('click', function () {
+			nav.classList.toggle('slide');
+		});
+	</script>   
+</body>
+
+</html>

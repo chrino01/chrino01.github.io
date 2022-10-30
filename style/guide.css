@@ -1,0 +1,54 @@
+/* konten */
+.container-guide{
+    background-color:  rgb(225, 225, 225,0.8);
+    box-sizing: border-box;
+}
+.guide{
+    padding :20px;
+}
+.judul-guide{
+    margin: 50px 50px 50px 50px;
+    background-color: gray;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.subjudul-guide h3{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.isikonten{
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255,0.7);
+    width: fit-content;
+    margin-left: 10%;
+    margin-right:10%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.img-konten{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+.isikonten p{
+    color:black;
+    margin: 20px 30px 20px 50px;
+    line-height: 1.5;
+}
+.penutup-guide{
+    margin: 50px 50px 50px 120px;
+    background-color: gray;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+

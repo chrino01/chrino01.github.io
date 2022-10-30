@@ -1,0 +1,201 @@
+
+/*style utama*/
+
+body{
+	background-color: lightgrey;
+}
+.judul-content-build {
+    margin:30px auto 50px auto;
+    text-align: center;
+    background-color: gray;
+    width: fit-content;
+    border-radius: 10px;
+    padding:10px;
+}
+.container-build{
+	width: 80%;
+	background-color:  rgb(225, 225, 225,0.8);
+	margin: 20px auto;
+	padding: 40px;
+	box-shadow: 0 0 2px 3px rgba(0,0,0,0.5);
+	border-radius:5px;
+}
+.gallery{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+.gallery li{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	/*overflow: hidden;*/
+	border:5px solid lightpink;
+	list-style: none;
+	/* float: left; */
+	
+	margin: 10px auto;
+	position: relative;
+}
+.gallery li, .gallery li a img, .gallery li span{
+	border-radius: 50%
+}
+
+.gallery li span{
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(255,210,210,0.35);
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 120px;
+	color: violet;
+	text-shadow: 1px 1px 1px white;
+	opacity: 0;
+	transform: scale(0) rotate(0);
+	transition: 0.8s;
+}
+
+.gallery li a:hover span{
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+
+
+/*overlay*/
+
+.overlay{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 99999;
+	transition: 2s; 
+	text-align: center;
+	padding: 100px 0;
+}
+
+.overlay:target{
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+
+}
+.overlay img{
+	max-height: 100%;
+	box-shadow: 2px 2px 1px 5px rgba(255,210,210,0.5);
+	border-radius: 5px;
+
+
+}
+
+.overlay:target img{
+	animation:zoomDanFade 1s ;
+}
+
+.overlay .close{
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -30px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	border:1px solid white;
+	line-height: 14px;
+	padding: 5px;
+	opacity: 0;
+
+}
+.overlay:target .close{
+	animation: slideDownFade 1s .5s forwards;
+}
+
+/*navigasi*/
+
+.next, .prev{
+	width: 57px;
+	height: 90px;
+	background-image: url(../img/right-re.png);
+	position: absolute;
+	text-indent: -9999px;
+	top: 45%;
+	margin-left: 45px;
+	opacity: 0;
+}
+.prev{
+	background-image: url(../img/left-re.png);
+	margin-left: -100px;
+
+}
+
+.overlay:target .next{
+	animation: fade 2s .5s forwards;
+}
+
+.overlay:target .prev{
+	animation: fade 2s .5s forwards;
+}
+
+
+/*animasi*/
+
+@keyframes fade{
+
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
+@keyframes zoomDanFade{
+	0%{
+		transform: scale(0);
+		transform: rotate(0);
+		opacity: 0;
+
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes slideDownFade{
+	0%{
+		opacity: 0;
+		margin-top: -20px; 
+	}
+	100%{
+		opacity: 1;
+		margin-top: 0;
+	}
+
+}
+/* layar */
+@media(max-width:768px){
+	
+	.container-build .gallery{
+		display: flex;
+		flex-wrap: wrap;
+	margin: 0 auto;
+	width: fit-content;
+	padding: 10px auto;
+	justify-content: space-evenly;
+	}
+
+
+}

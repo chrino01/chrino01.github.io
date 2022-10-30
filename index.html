@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Genshin Web</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="style/footer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+
+	<div class="container">
+		<header class="header">
+			<div class="hero">
+				<a href="index.html">
+					<h2 class="heading">Genshin Impact Information</h2>
+				</a>
+				<p class="sub-heading">ChrinoS</p>
+			</div>
+			<div class="features feature-1">
+				<a href="https://www.hoyolab.com/home/events">
+				<p class="item">Event Genshin Impact</p>
+			</a>
+			</div>
+			<div class="features feature-2">
+				<a href="html/guide.html">
+				<p class="item">Guide Genshin Impact</p>
+			</a>
+			</div>
+		</header>
+
+		<nav class="menu">
+			<div class="menu-toggle">
+				<input type="checkbox">
+				<span></span>
+				<span></span>
+				<span></span>
+
+			</div>
+			<div class="brand">
+				<a href="index.html">
+					<h1>Chrino'S</h1>
+				</a>
+			</div>
+			<ul class="menu-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://www.hoyolab.com/home/events" target="_blank">Event</a></li>
+				<li><a href="html/myprofile.html" target="_blank">About Me</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+			</ul>
+		</nav>
+		<br>
+
+		<section class="services">
+
+			<div class="service">
+				<div class="icon">
+					<a href="html/guide.html"><img src="img/guide.jpg" alt=""></a>
+				</div>
+				<a href="html/guide.html" target="_blank">
+					<h3>Guide</h3>
+				</a>
+				<p>Pelajari Guide dan cara bermain Genshin Impact </p>
+			</div>
+			<div class="service">
+				<div class="icon">
+					<a href="https://www.hoyolab.com/home/events"><img src="img/icon2.jpg"></a>
+				</div>
+				<a href="https://www.hoyolab.com/home/events" target="_blank">
+					<h3>Event</h3>
+				</a>
+				<p>Lihat event event Genshin Impact di Hoyolab</p>
+			</div>
+			<div class="service">
+				<div class="icon"><a href="html/build.html"><img src="img/icon1.jpg"></a></div>
+				<a href="html/build.html" target="_blank">
+					<h3>Build</h3>
+				</a>
+				<p>Kumpulan build character Genshin Impact</p>
+			</div>
+			<div class="service">
+				<div class="icon"><a href="https://shopee.co.id/search?keyword=merchandise%20genshin%20impact"><img src="img/merch.jpg"></a></div>
+				<a href="https://shopee.co.id/search?keyword=merchandise%20genshin%20impact" target="_blank">
+					<h3>Merch</h3>
+				</a>
+				<p>Lihat dan beli merchandise Genshin Impact di Shoppe </p>
+			</div>
+		</section>
+		<section id="gallery" class="gallery">
+
+			<h2>Gallery</h2>
+
+			<img class="img-gallery" src="img/klee1.jpg">
+			<img class="img-gallery" src="img/klee2.jpg">
+			<img class="img-gallery" src="img/klee3.jpg">
+			<img class="img-gallery" src="img/klee4.jpg">
+			<img class="img-gallery" src="img/klee5.jpg">
+			<img class="img-gallery" src="img/klee6.jpg">
+			<img class="img-gallery" src="img/klee7.jpg">
+			<img class="img-gallery" src="img/klee8.jpg">
+			<img class="img-gallery" src="img/klee9.jpg">
+			<img class="img-gallery" src="img/klee10.jpg">
+		</section>
+	</div>
+
+	<footer>
+        <p class="text">Kunjungi Website TI Unisla</p>
+        <a href="https://ti.unisla.ac.id/" target="_blank" class="unisla">UNISLA</a>
+        </ul> 
+        <div class="social-media">
+            <a href="https://www.instagram.com/christpr31" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/gambreng.gambreng.33449" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UC0AaItUbMePMJLhEU_LlMOA" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copyrights"> Copyright © 2022 Christopher</p>
+    </footer>
+
+
+
+
+
+	<script type="text/javascript">
+		const menuToggle = document.querySelector('.menu-toggle input');
+		const nav = document.querySelector('nav ul');
+
+		menuToggle.addEventListener('click', function () {
+			nav.classList.toggle('slide');
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="../style/myprofile.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="warp">
+    <!-- header and navbar -->
+    <nav class="menu">
+        <div class="menu-toggle">
+                <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+    
+        </div>
+        <div class="brand">
+            <a href="../index.html"><h1>Chrino'S</h1></a>
+        </div>
+        <ul class="menu-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://www.hoyolab.com/home/events" target="_blank">Event</a></li>
+            <li><a href="html/myprofile.html" target="_blank">About Me</a></li>
+            <li><a href="../index.html #gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+        <!-- konten -->
+    <main>
+        <div id="cont" class="content">
+            <aside class="card" id="profile">
+                <span class="profile-content">
+                    <h2>Profile Saya</h2>
+                </span>
+                <br>
+                <img src="../img/Foto Chrino.jpg" alt=""><br>
+                <span class="profile-content">
+                    <h2>Christopher Bernard Selo Harjuno</h2>
+                </span>
+            </aside>
+            <article>
+                <div id="biodata" class="content-biodata">
+                    <h2 class="judul">BIODATA</h2>
+                    <table class="table-bio">
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>Christopher Bernard Selo Harjuno</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Tanggal Lahir</td>
+                            <td>:</td>
+                            <td>Yogyakarta 01 Mei 2003</td>
+                        </tr>
+                        <tr>
+                            <td>Universitas</td>
+                            <td>:</td>
+                            <td>Universitas Islam Lamongan</td>
+                        </tr>
+                        <tr>
+                            <td>NO. Whatsapp</td>
+                            <td>:</td>
+                            <td>085708944196</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hobby" class="content-hobby">
+                    <h2 class="judul">MyHobby</h2>
+                    <div class="list-hobby">
+                        <img src="../img/game.png" alt="">
+                        <p>Saya Suka Bermain Game Online, Banyak sekali Game online yang telah saya mainkan. dan favorit
+                            saya yaitu Genshin Impact</p>
+                    </div>
+                    <div class="list-hobby">
+                        <img src="../img/onepiece.png" alt="">
+                        <p>Saya juga suka melihat Anime Jepang dan Favorit saya yaitu One Piece</p>
+                    </div>
+                    <div class="list-hobby">
+                        <img src="../img/book.png" alt="">
+                        <p>Membaca Buku diwaktu Luang atau sebelum Tidur adalah kesukaan saya</p>
+                    </div>
+                </div>
+        </div>
+        </article>
+        <div class="clear"></div>
+    </main>
+</div>
+    <footer>
+        <p class="text">Kunjungi Website TI Unisla</p>
+        <a href="https://ti.unisla.ac.id/" target="_blank" class="unisla">UNISLA</a>
+        </ul> 
+        <div class="social-media">
+            <a href="https://www.instagram.com/christpr31" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/gambreng.gambreng.33449" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UC0AaItUbMePMJLhEU_LlMOA" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copyrights"> Copyright © 2022 Christopher</p>
+    </footer>
+
+<script type="text/javascript">
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+    });
+</script>
+</body>
+
+</html>
